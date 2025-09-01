@@ -52,13 +52,24 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             {/* Logo */}
-            <div className="flex-shrink-0 flex items-center">
+            {/* Logo */}
+            <div className="flex-shrink-0 cursor-pointer flex items-center">
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 className="flex items-center space-x-2"
+                onClick={()=>router.push("/")}
               >
                 <div className="w-3 h-3 rounded-full bg-neon shadow-glow" />
+
+                {/* Replace text with logo image */}
+                <img
+                  src="/images/x.png" // <-- put your logo path here
+                  alt="Logo"
+                  className="h-14 w-auto" // adjust height as needed
+                />
+
+                {/* Optional: keep text next to logo if you want */}
                 <span className="text-xl font-bold tracking-tighter">X180</span>
               </motion.div>
             </div>
