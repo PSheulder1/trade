@@ -1,0 +1,14 @@
+// app/dashboard/page.jsx
+'use client';
+
+import DashboardLayout from "../components/DashboardLayout";
+
+
+
+export default function DashboardPage() {
+  return (
+    <DashboardLayout>
+      {/* Content will be injected based on active tab */}
+    </DashboardLayout>
+  );
+}
