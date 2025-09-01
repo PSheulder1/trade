@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import {
   FiShoppingCart,
@@ -274,7 +275,19 @@ export default function Marketplace() {
       {/* Header */}
       <header className="sticky top-0 z-50 bg-dark/90 backdrop-blur-md shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold">TradingPro Shop</h1>
+          <h1 className="text-2xl font-bold flex items-center space-x-2">
+            {/* Logo Image */}
+            <Link href="/">
+              <img
+                src="/images/x.png"
+                alt="TradingPro Logo"
+                className="h-12 w-auto"
+              />
+            </Link>
+
+            {/* Text next to logo */}
+            <Link href="/">X180</Link>
+          </h1>
 
           <div className="flex items-center space-x-4">
             <div className="hidden md:flex space-x-4">
